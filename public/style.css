@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#D8C2FF;
+}
+
+.cotenido{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login{
+    background: #c4baff;
+    border-radius: 50px;
+    width: 500px;
+    height: 700px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+
+
+
+/* CSS */
+
+
+.btn{
+    color: #f5f3f4;
+    background: #9BA9FF;
+    width: 400px;
+    height: 60px;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+.btn:hover{
+    background: #A5ADFF;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+} 
+
+input{
+    word-wrap: break-word;
+    width: 350px;
+    height: 60px;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+
+}
+
+
+input:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+
+
+#login-form{
+    height:600px;
+    display: grid;
+
+}
+
+.icono img{
+    width:130px;
+    height:130px;
+    margin-top: 30px;
+
+}
+.icono{
+    height:140px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.a{
+    position: relative;
+}
+.a:before {
+
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    bottom: 0;
+    width: 30px;
+    height: 40px;
+    background: url("./img/user.svg") center / contain no-repeat;
+}
+
+
+.b{
+    position: relative;
+}
+.b:before {
+
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    bottom: 0;
+    width: 30px;
+    height: 40px;
+    background: url("./img/password.svg") center / contain no-repeat;
+}
+
+

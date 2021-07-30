@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.todo{
+    background: #F8EDEB;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+
+    overflow: hidden;
+    border-radius: 20px;
+    width: 80vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns:25% 75%;
+    
+}
+
+
+.contacto{
+    display: grid;
+
+}
+.chat{
+    display: grid;
+
+    grid-template-rows: 90% 10%;
+
+}
+.mensajes{
+    
+}
+
+.inputChat{
+    background:white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+
+}
+.chat input{
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    height:60px;
+    width:900px;
+    border: 1px solid gainsboro;
+    font-size: 19px;
+    padding-left: 10px;
+    background-color:#ebf1f7;
+}
+
+
+.mensajes{
+
+    padding-top: 10px;
+    background: #fff;
+    display: grid;
+    align-content: start;  
+    overflow-y:auto;
+}
+
+/* mensajes del mios */
+
+.mande_yo{
+    padding: 5px;
+
+    display: grid; 
+    justify-content:  space-between;
+    align-content: space-between; 
+    justify-content: end;
+    padding-right: 130px;
+}
+.globo{
+    white-space:initial;
+}
+.msj_yo{
+    background: #f6f9fb;
+    color: #95aac9;
+    padding: 9px;
+    border-radius: 20px 2px 20px 20px ;
+    text-align: start;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width:35vw;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+   
+}
+.tiempo{
+    display: grid;
+    font-size : 12px;
+    
+    font-family: 'Poppins', sans-serif;
+    text-align: end;
+    padding-left: 40px;
+}
+
+/* mensajes de la otra persona */
+
+.envio_anonimo{
+
+    padding: 5px;
+    display: grid; 
+    justify-content:  space-between;
+    align-content: space-between; 
+    justify-content: start;
+    padding-left: 130px;
+}
+.mensaje_persona{
+    background: #2787f5;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    padding: 9px;
+    border-radius: 2px 20px 20px 20px ;
+    text-align: start;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width:35vw;
+}
+
+/* lado izquierdo */
+.contacto{
+   
+    display: grid;
+    justify-content: center;
+    grid-template-rows:  8% 92%;
+    background: #f6f9fb;
+}
+.buscador{
+    align-self: center;
+    
+}
+.buscador input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color:#ebf1f7;
+    color: #a0b3ce;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+.contactos{
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.primer_contacto{
+  
+    margin: 5px;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 75% 25%;
+    background: white;
+    border-top: 2px solid #f5f8fb;
+    
+}
+
+.completo-hora-mensajes{
+    display: grid;
+    text-align: center;
+    height: 100px;
+}
+
+.contador-mensajes{
+    display: grid;
+    background: #80ed99;
+    width: 20px;
+    height: 20px;
+    justify-self: center;  
+    border-radius: 50%;
+    align-items: center;
+    align-content: center;
+    font-size: 15px;
+}
+.nombre-mensaje{
+    text-align: start;
+    display: grid;
+    width: 150px;
+    justify-content: center;
+    place-self: center;
+}
+.nombre-mensaje P {
+    font-size: 25px;
+  
+}
+.mesanje-vista{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #95aac9;
+}
+
+.hora-antes{
+    align-self: end;
+
+}

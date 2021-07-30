@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,900&display=swap');
+        </style>
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="cotenido">
+
+        <div class="login">
+            <form action="" id="login-form" autocomplete="off">
+                <div class="icono"> <img src="./img/carta1.svg" alt=""></div>
+                <div> 
+                    <label for="" class='iconos a'>
+                        <input type="text" name="email" class="input uno" placeholder="Email">
+                    </label>
+                </div>
+                <div>
+                    <label for="" class='iconos b'>
+
+                        <input type="password" name="password" class="input dos" placeholder="Password">
+                    </label>
+                </div>
+                <button type="submit" class="btn" role="button"> Login </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./auth.js"></script>
+</body>
+</html>
