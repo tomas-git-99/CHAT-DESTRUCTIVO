@@ -23,7 +23,8 @@ class Server {
         this.path ={
             auth:'/api/auth',
             usuario:'/api/usuario',
-            crear:'/api/crear'
+            crear:'/api/crear',
+            mensaje:'/api/mensaje',
         }
         this.configurarSockets();
 
@@ -48,6 +49,7 @@ class Server {
         this.app.use(this.path.auth, require('../routers/auth'));
         this.app.use(this.path.usuario, require('../routers/usuario'));
         this.app.use(this.path.crear, require('../routers/crearSaladechat'));
+        this.app.use(this.path.mensaje, require('../routers/mensaje'));
     }
 
     configurarSockets(){

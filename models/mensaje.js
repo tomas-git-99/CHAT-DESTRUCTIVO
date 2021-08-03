@@ -3,6 +3,13 @@ const { Schema, model } = require('mongoose');
 
 
 const MensajeSchema = Schema({
+    // id de sala
+     
+    idSala:{
+        type: Schema.Types.ObjectId,
+        ref:'Saladechat',
+        required: true,
+    },
 
     de:{
         type: Schema.Types.ObjectId,
@@ -18,21 +25,11 @@ const MensajeSchema = Schema({
         type:String,
         required: true,
     },
-    token:{
-        type:String,
-        required: true,
-    },
-    creadoPor:{
-        type: Schema.Types.ObjectId,
-        ref:'Usuario',
-        required: true,
-    }
- 
-
 
 },{
     timestamps:true
-});
+} );
+
 
 MensajeSchema.method('toJSON', function() {
     const {__v, ...object} = this.toObject();
