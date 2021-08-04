@@ -15,14 +15,15 @@ const mensajes = async(req, res) => {
         //verificando si el token esta vivo o muerto
         const vetificarToken = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
 
-
         if(!vetificarToken){
 
             return res.status(404).json({
                 ok: false,
                 msg:"Esta sala ya no existe"
             })
-        }
+            
+        };
+
 
         const data = {
             idSala,

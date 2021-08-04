@@ -16,7 +16,7 @@ const crearSaladechat = async( req = request, res=response) => {
         const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
 
         const nuevoToken = await generadorJWTmensaje(uid, tiempo);
-
+        
         const data = {
             titulo,
             tiempo,

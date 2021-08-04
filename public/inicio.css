@@ -3,12 +3,13 @@
     margin: 0;
 }
 .todo{
-    background: #F8EDEB;
+    background: #9BA9FF;
     width: 100vw;
     height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
+    /* pointer-events: none; */
 }
 
 .container{
@@ -30,31 +31,41 @@
 .chat{
     display: grid;
 
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 80% 20%;
 
 }
-.mensajes{
-    
-}
+
 
 .inputChat{
     background:white;
     display: grid;
     align-items: center;
     justify-items: center;
-
-
+    border: 1px solid red;
+    max-height: 169px;
+}
+.inputChatColor{
+ 
+    border: 5px solid green;
+    width: 1000px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 .chat input{
+    
     border: none;
     border-radius: 50px;
     outline: none;
-    height:60px;
-    width:900px;
+    max-height:150px;
+    width:800px; 
+    height: 40px; 
     border: 1px solid gainsboro;
     font-size: 19px;
     padding-left: 10px;
     background-color:#ebf1f7;
+
 }
 
 
@@ -70,30 +81,48 @@
 /* mensajes del mios */
 
 .mande_yo{
+  
+    width: auto;
     padding: 5px;
-
+/*     display:flex;
+    flex-direction: column; */
     display: grid; 
     justify-content:  space-between;
-    align-content: space-between; 
+    align-content: space-between;
     justify-content: end;
     padding-right: 130px;
+
+
 }
 .globo{
+    border: 1px solid;
     white-space:initial;
+    /* padding-right: 25px; */
+   justify-self: end;
+    word-wrap: break-word;
+    max-width:35vw;
+    text-align: start;
+
+    
 }
 .msj_yo{
+    display: grid;
+
+    justify-self: end;
+    word-wrap: break-word;
+    margin-bottom: 10px;
     background: #f6f9fb;
     color: #95aac9;
     padding: 9px;
     border-radius: 20px 2px 20px 20px ;
     text-align: start;
-
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width:35vw;
     font-family: 'Poppins', sans-serif;
     font-size:18px;
-   
+    padding-left: 15px;
 }
+
 .tiempo{
     display: grid;
     font-size : 12px;
@@ -139,6 +168,7 @@
     
 }
 .buscador input{
+    margin-top:10px;
     border: none;
     outline: none;
     width: 100%;
@@ -206,4 +236,175 @@
 .hora-antes{
     align-self: end;
 
+}
+
+
+.crearsala{
+    background-color:#F8EDEB;
+    width: 400px;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 400px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    left: -300px; 
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.crearsala-detalles{
+    font-family: 'Poppins', sans-serif; 
+    align-self: center;
+}
+.crearsala-detalles h2, p{
+    text-align: center;
+}
+.crearsala-images{
+    justify-self: center;
+    padding-left: 15px;
+
+}
+.crearsala-images:hover{
+/*     transition: 1.5s;
+    left: 0px; */
+    cursor: pointer;
+}
+
+.crearsala-detalles p button{
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; 
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.ventaDecrear{
+    opacity: 0;
+    position:fixed;
+    background: #E2C6FF;
+    width:700px;
+    height:500px;  
+    margin: 10% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transform: translateX(1400px); 
+    transition: all 1s;
+    z-index: 1000;
+    
+}
+
+.formularioCrear{
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.formularioCrear form{
+   
+    width: 700px;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 80px;
+    margin-bottom: 80px;
+}
+/* .formularioCrear h2{
+    color: #e5e5e5;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    font-size: 30px;
+} */
+.formulario-inputuno input{
+    text-align: center;
+    font-size: 24px;
+    padding-left: 20px;
+    border-radius: 25px;
+    width: 500px;
+    height: 40px;
+}
+.formularioCrear input{
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.iconoDEformulario{
+
+    justify-self: center;
+   
+}
+/* 
+.formularioCrear form button{
+    width: 300px;
+    height: 40px;
+} */
+.formulario-inputdos input{
+    text-align: center;
+    font-size: 24px;
+    width: 96px;
+    height: 40px;
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 10px;
+    border: 1px solid;
+    border: none;
+}
+.formulario-inputdos{
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+
+}
+
+.formulario-inputdos h3 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    margin-left: 2px;
+    display: grid;
+    align-content: center;
+    background-color:#ebf1f7;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 80px;
+    height: 40px;
+    /* align-self: end; */
+    text-align: center;
+    border-radius: 0px 25px 25px 0px;
+    color: #95aac9;
+}
+
+.formulario-inputdos button {
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    font-size:24px;
+    cursor: pointer;
+    background: #A5ADFF;
+    width: 100%;
+    height: 44px;
+    align-self: end;
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.salidaDeventana{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800; 
+    font-size: 20px;
+    color: white;
+    left: 94%;
+    top: 3%;
+    cursor: pointer;
+}
+
+.salidaDeventana:hover{
+    transition: .5s;
+    transform: scale(1.1);
 }

@@ -12,14 +12,52 @@
 </head>
 <body>
 
+    <div class="ventaDecrear">
+        <div class="salidaDeventana">X</div>
+        <div class="formularioCrear">
+                <form action="" id="formularioCrearBase">
+                    <div class="iconoDEformulario">
+                        <img src="https://img.icons8.com/nolan/100/create.png"/>
+                    </div>
+                    <div class="formulario-inputuno">
+           
+                        <input type="text" placeholder='TITULO' name="titulo">
+
+                    </div>
+
+                    <div class="formulario-inputdos">
+                        <div>
+                            <input type="text" placeholder='TIEMPO' style="font-size: 20px" name="tiempo">
+                        </div>
+                        <h3>HORAS</h3>       
+                        <button type="submit">CREAR</button>
+                    </div>
+                    
+                </form>
+          
+        </div>
+    </div>
     <div class="todo">
 
+
+        <div class="crearsala">
+            <div class="crearsala-detalles">
+                <h2>CREAR</h2>
+
+                <p>Crea tus sala de chat auto-destructiva.  <button class="crearSalaBTN" >CREAR</button></p>
+            </div>
+            <div class="crearsala-images">
+
+                <img src="https://img.icons8.com/nolan/100/create.png"/>
+            </div>
+        </div>
 
         <div class="container">
     
             <div class="contacto">
                 <div class="buscador">
                     <input type="text" placeholder="Buscar">
+
                 </div>
                 <div class="contactos">
                     <div class="primer_contacto">
@@ -60,7 +98,7 @@
                     <div class="mensaje_persona">
 
                         <p class="globo">hola amigo como esta?</p>
-                    <span class="tiempo"> 11:01 AM </span>
+                        <span class="tiempo"> 11:01 AM </span>
                     </div>
                     
                 </div>
@@ -82,7 +120,11 @@
                 </div>
     
                 <div class="inputChat">
-                    <input type="text">
+                    <div class="inputChatColor">
+
+                        <input type="text" id='enviarmensaje'>
+        
+                    </div>
                 </div>
             </div>
     
@@ -91,7 +133,10 @@
             </div>
     
         </div>
+
     </div>
     <script src="./inicio.js"></script>
+    <script src="./js/crearSala.js"></script>
+    <script src="./js/chat.js"></script>
 </body>
 </html>

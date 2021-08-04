@@ -2,11 +2,11 @@ const url = ( window.location.hostname.includes('localhost'))
       ? 'http://localhost:8010/api/'
       : '';
 
+
 const validarJWT = async() =>{
 
     const token = localStorage.getItem('token') || '';
 
-    console.log(token.length);
     //no hacer una petecion al backend
     if( token.length <= 10){
         //window.location = 'index.html';
